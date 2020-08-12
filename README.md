@@ -10,7 +10,7 @@ En la carpeta `src` están los siguientes archivos:
 
 La función `main` requiere un parámetro el cual indica el problema de prueba a resolver (`:espiral`,`:seno`,`:parabola`) y tres parámetros con palabras clave (opcionales):
 
-1. `seed_malla` un núero entero que cambia la semilla para generar una malla inclompleta aleatoria (1 predeterminado)
+1. `seed_malla` un número entero que cambia la semilla para generar una malla inclompleta aleatoria (1 predeterminado)
 2. `penalización` número entero referente al factor de penalización en la función heurística (500 predeterminado)
 3. `genera_gif` genera una animación si su valor es true (`false` predeterminado)
 
