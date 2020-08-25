@@ -49,7 +49,7 @@ function a_star_impl!(
             # evita seguir visitando nodos más allá de encontrar el vertice objetivo
             continue
 
-        elseif i < n && uindx == tindx # encontré el nodo local objetivo?
+        elseif i < n && uindx == tindx # ¿encontré el nodo local objetivo?
             # Cambia de objetivo y actualiza el costo respecto a la restricción
             i += 1
             tindx = mkindx(targets[i])
@@ -57,7 +57,7 @@ function a_star_impl!(
 
             # cuantifica si "path" esta seguiendo la restricción en orden
             # para asegurar monotonía (OJO no es la función heuristica, se usa esa misma
-            # función con fines de siplicidad del código)
+            # función con fines de simplicidad del código)
             cost_so_far = heuristic(0, 0, path)
 
 
